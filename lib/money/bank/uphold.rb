@@ -23,10 +23,6 @@ class Money
 
       # Update all rates from UpholdBank JSON
       def update_rates
-        # clear all existing rates, even inferred ones
-        store.each_rate do |iso_from, iso_to, _rate|
-          add_rate(iso_from, iso_to, nil)
-        end
         exchange_rates.each do |ticker|
           add_exchange_rates_from_ticker(ticker)
         end
