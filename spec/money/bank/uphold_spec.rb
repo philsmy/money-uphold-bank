@@ -60,12 +60,12 @@ RSpec.describe Money::Bank::Uphold do
   end
 
   context "update rates" do
-    it "should override existing rates" do
+    it "should not override existing rates" do
       subject.add_rate(:EUR, :BTC, 300)
 
       subject.update_rates
 
-      expect(subject.get_rate(:EUR, :BTC)).not_to eq 300
+      expect(subject.get_rate(:EUR, :BTC)).to eq 300
     end
   end
 
