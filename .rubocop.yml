@@ -11,7 +11,7 @@ AllCops:
     - "node_modules/**/*"
     - "spec/factories.rb"
     - "slack_bot/**/*"
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 3
 
 Metrics/LineLength:
   Enabled: false

@@ -19,9 +19,11 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "money", "~> 6.12"
 
-  spec.add_development_dependency "bundler", "~> 1.11"
+  spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop", "~> 0.37.2"
   spec.add_development_dependency "webmock", "~> 2.1.0"
+
+  spec.required_ruby_version = '>= 3.0.0'
 end
